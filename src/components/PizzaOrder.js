@@ -11,7 +11,6 @@ export default function PizzaOrder({ order, pizzas, removeFromOrder }) {
         const pizza = pizzas.find(
           (singlePizza) => singlePizza.id === singleOrder.id
         );
-        console.log(pizza);
         return (
           <MenuItemStyles key={singleOrder.id + index}>
             <Img fluid={pizza.image.asset.fluid} />
